@@ -25,25 +25,26 @@ $$p(\theta) \propto \theta^{\alpha-1}(1-\theta)^{\beta-1}$$
 We chose some hyperparameter values
 ```{r}
 # my hyperprior parameters for alpha and beta
-# mya = 
-# myb = 
+mya = 3 
+myb = 12
 ```
 
 Next, we collected our data, both individually, and as a class.
 ```{r}
-# record your data before eating it!
-
 # total number of trials per bag
-# n = 15
+n = 15
 
-# number of blue m&m's
-# y =  # number of blue
+# class data, number of successes (blue m&m's) from each bag
+classdata = c(2,3,1,5,3,2,4,4,4,4,6,2,3,5,5,4,1,2,4,4)
 
-# class data, sum of number of successes from each bag
-# mydata = 
+# class data, total number of successes (blues)
+# yclass = 
 
 # number of bags
+# nbags = 
 
+# total trials for class is number of trials for each student n=16 times number of students
+# nclass = 
 ```
 
 
@@ -53,20 +54,13 @@ We calculated the posterior given your data and your prior distribution, and plo
 par( mar = c(5,5,2,2))
 
 # plot the posterior distribution
-# curve( dbeta( x, shape1 = (mydata + mya), shape2 = (n-mydata+myb)),
-#       xlab = expression(theta), ylab = expression(p(theta)) , 
-#       main = "Posterior distribution for the probability of drawing a blue candy", 
-#       cex.lab=2, lwd=2)
-# 
-# grid()
 
 
 # add the prior distribution to the plot, to compare
-# curve(dbeta(x, shape1 = mya, shape2 = myb),lwd=2, lty=3, add=TRUE, col="darkgrey")
 
 
 # add a legend
-# legend("topright", legend = c("posterior",                              as.expression(bquote("prior, "~alpha == .(mya)~"and"~beta == .(myb))) ),   lty=c(1,3), lwd=2, col=c("black", "darkgrey"))
+
 ```
 
 ### Exercise
